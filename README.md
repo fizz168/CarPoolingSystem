@@ -10,4 +10,4 @@ The workspace contains two folders by default, where:
 - `lib`: the folder to maintain dependencies
 
 ## How to run 
-java <file want to compile>
+java (file want to compile) 
