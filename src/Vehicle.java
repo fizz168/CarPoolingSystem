@@ -26,11 +26,17 @@ public String brand(){
 public String model(){
     return model;
 }
-public double pricePerDay(int day){
-    return pricePerDay* day;
+public double pricePerDay(int rentalDay){
+    return pricePerDay* rentalDay;
 }
 public boolean isAvalible(){
     return isAvalible;
+}
+public void rent(){
+  isAvalible = false;
+}
+public void returnCar(){
+    isAvalible = true;
 }
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
