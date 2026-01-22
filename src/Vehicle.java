@@ -1,4 +1,4 @@
-class Car{
+class Vehicle{
     private String carId;
     private String motoId;
     private String brand;
@@ -6,7 +6,7 @@ class Car{
     private double pricePerDay;
     private Boolean isAvalible;
 
-public Car (String carId, String motoID, String brand, String model, double pricePerDay ){
+public Vehicle (String carId, String motoID, String brand, String model, double pricePerDay ){
     this.carId = carId;
     this.motoId = motoID;
     this.brand = brand;
