@@ -1,4 +1,4 @@
- class Rental {
+class Rental {
     private Vehicle car;
     private Vehicle moto;
     private Customer customer;
