@@ -26,7 +26,7 @@ public String brand(){
 public String model(){
     return model;
 }
-public double pricePerDay(int rentalDay){
+public double calulatePrice(int rentalDay){
     return pricePerDay* rentalDay;
 }
 public boolean isAvalible(){
