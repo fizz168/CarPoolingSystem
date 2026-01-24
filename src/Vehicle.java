@@ -1,25 +1,22 @@
 class Vehicle{
-    private String carId;
-    private String motoId;
+    private String vehicleId;
     private String brand;
     private String model;
     private double pricePerDay;
     private Boolean isAvalible;
 
-public Vehicle (String carId, String motoID, String brand, String model, double pricePerDay ){
-    this.carId = carId;
-    this.motoId = motoID;
+public Vehicle (String vehicleId, String brand, String model, double pricePerDay ){
+    this.vehicleId = vehicleId;
+  
     this.brand = brand;
     this.model = model;
     this.pricePerDay = pricePerDay;
     this.isAvalible = true;
 }
-public String getcarId(){
-    return carId;
+public String getvehicleId(){
+    return vehicleId;
 }
-public String motoID(){
-    return motoId;
-}
+
 public String brand(){
     return brand;
 }
