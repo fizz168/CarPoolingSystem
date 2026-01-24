@@ -1,20 +1,15 @@
 class Rental {
-    private Vehicle car;
-    private Vehicle moto;
+    private Vehicle vehicle;
     private Customer customer;
     private int days;
 
-public Rental(Vehicle car, Vehicle moto, Customer customer, int days ){
-        this.car = car;
-        this.moto = moto;
+public Rental(Vehicle vehicle, Customer customer, int days ){
+        this.vehicle = vehicle;
         this.customer = customer;
         this.days = days;
     }
-public Vehicle getcar(){
-    return car;
-}
-public Vehicle getmoto(){
-    return moto;
+public Vehicle getvehicle(){
+    return vehicle;
 }
 public Customer getcustomer(){
     return customer;

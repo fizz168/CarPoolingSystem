@@ -7,7 +7,6 @@ class Vehicle{
 
 public Vehicle (String vehicleId, String brand, String model, double pricePerDay ){
     this.vehicleId = vehicleId;
-  
     this.brand = brand;
     this.model = model;
     this.pricePerDay = pricePerDay;
@@ -16,7 +15,6 @@ public Vehicle (String vehicleId, String brand, String model, double pricePerDay
 public String getvehicleId(){
     return vehicleId;
 }
-
 public String brand(){
     return brand;
 }
