@@ -33,7 +33,5 @@ public void rent(){
 public void returnCar(){
     isAvalible = true;
 }
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+    
 }
