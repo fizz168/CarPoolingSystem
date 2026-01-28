@@ -1,11 +1,11 @@
 public class Customer {
      String customerId;
      String name;
-     int phoneNumbe;
+     int phoneNumber;
 public Customer(String customerId, String name, int phoneNumber){
     this.customerId = customerId;
     this.name = name;
-    this.phoneNumbe = phoneNumber;
+    this.phoneNumber = phoneNumber;
 }
 public String getcustomerId(){
     return customerId;
@@ -14,6 +14,6 @@ public String getname(){
     return name;
 }
 public int getphoneNumber(){
-    return phoneNumbe;
+    return phoneNumber;
 }
 }
