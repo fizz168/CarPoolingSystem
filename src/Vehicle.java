@@ -5,7 +5,7 @@ public class Vehicle{
      double pricePerDay;
      Boolean isAvalible;
      String vehicletype;
-
+    
 public Vehicle (String vehicleId, String brand, String model, double pricePerDay, String vehicletype){
     this.vehicleId = vehicleId;
     this.brand = brand;
@@ -38,4 +38,5 @@ public void returnCar(){
 public String getvehicletype(){
     return vehicletype;
     
+}
 }
