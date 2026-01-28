@@ -3,4 +3,6 @@ public class Staff {
     String staffId;
     String staffPersonalId;
     int staffPhoneNumber;
+
+    
 }
