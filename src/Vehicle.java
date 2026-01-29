@@ -17,10 +17,10 @@ public Vehicle (String vehicleNumberPlate, String brand, String model, double pr
 public String getvehicleINumberplate(){
     return vehicleNumberPlate;
 }
-public String brand(){
+public String getbrand(){
     return brand;
 }
-public String model(){
+public String getmodel(){
     return model;
 }
 public double calulatePrice(int rentalDay){
