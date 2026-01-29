@@ -10,5 +10,17 @@ public Staff(String nameStaff, String staffId, int staffPersonalId, int staffPho
     this.staffPhoneNumber = staffPhoneNumber;
 
 }
-    
+public String getnameStaff(){
+    return nameStaff;
+}
+public String getstaffId(){
+    return staffId;
+}
+  public int getstaffPersonalId(){
+    return staffPersonalId;
+  }  
+public int getstaffPhoneNumber(){
+    return staffPhoneNumber;
+}
+
 }
