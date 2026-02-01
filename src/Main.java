@@ -19,14 +19,15 @@ public class Main {
         Customer c = new Customer("C001", "John Doe", "012345678");
         Staff s = new Staff("Alice", "S99", 10101, "098765432");
 
-        // 4. Perform Logic: Rent the vehicle
+        
         if (v.isAvalible()) {
             v.rent(); 
-            Rental r = new Rental(v, c, 3, 5001); // 3 days, ID 5001
+            Rental r = new Rental(v, c, 3, 5001); 
             System.out.println("--- Rental Receipt ---");
             System.out.println("Customer: " + c.getname());
             System.out.println("Vehicle: " + v.getvehicleINumberplate());
             System.out.println("Total Cost: $" + v.calulatePrice(r.getdays()));
+            System.out.println("Total Days :" + r.getdays());
             System.out.println("Status: Vehicle is now rented.");
             System.out.println("Staff info :" + s.getnameStaff() );
         } else {
