@@ -1,8 +1,8 @@
 class Customer {
     private String customerPersonalId;
     private String name;
-    private int phoneNumber;
-public Customer(String customerPersonalId, String name, int phoneNumber){
+    private String phoneNumber;
+public Customer(String customerPersonalId, String name, String phoneNumber){
     this.customerPersonalId = customerPersonalId;
     this.name = name;
     this.phoneNumber = phoneNumber;
@@ -13,7 +13,7 @@ public String getcustomerPersonalId(){
 public String getname(){
     return name;
 }
-public int getphoneNumber(){
+public String getphoneNumber(){
     return phoneNumber;
 }
 }

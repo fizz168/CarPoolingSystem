@@ -25,4 +25,5 @@ class Rental {
    public int getrecordid(){
       return recordId;
    }
-}
+  
+   }
