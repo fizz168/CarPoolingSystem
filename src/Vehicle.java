@@ -6,7 +6,7 @@ class Vehicle{
     private boolean isAvalible;
     private String vehicleType;
     
-public Vehicle (String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicletype){
+public Vehicle (String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicleType){
     this.vehicleNumberPlate = vehicleNumberPlate;
     this.brand = brand;
     this.model = model;
@@ -35,7 +35,7 @@ public void rent(){
 public void returnCar(){
     isAvalible = true;
 }
-public String getvehicletype(){
+public String getvehicleType(){
     return vehicleType;
     
 }

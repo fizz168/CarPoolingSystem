@@ -2,8 +2,8 @@ public class Staff {
     String nameStaff;
     String staffId;
     int staffPersonalId;
-    int staffPhoneNumber;
-public Staff(String nameStaff, String staffId, int staffPersonalId, int staffPhoneNumber){
+    String staffPhoneNumber;
+public Staff(String nameStaff, String staffId, int staffPersonalId, String staffPhoneNumber){
     this.nameStaff = nameStaff;
     this.staffId = staffId;
     this.staffPersonalId = staffPersonalId;
@@ -19,7 +19,7 @@ public String getstaffId(){
   public int getstaffPersonalId(){
     return staffPersonalId;
   }  
-public int getstaffPhoneNumber(){
+public String getstaffPhoneNumber(){
     return staffPhoneNumber;
 }
 
