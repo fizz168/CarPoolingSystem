@@ -4,7 +4,7 @@ class Vehicle{
     private String model;
     private double pricePerDay;
     private boolean isAvalible;
-    private String vehicletype;
+    private String vehicleType;
     
 public Vehicle (String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicletype){
     this.vehicleNumberPlate = vehicleNumberPlate;
@@ -12,7 +12,7 @@ public Vehicle (String vehicleNumberPlate, String brand, String model, double pr
     this.model = model;
     this.pricePerDay = pricePerDay;
     this.isAvalible = true;
-    this.vehicletype = vehicletype;
+    this.vehicleType = vehicleType;
 }
 public String getvehicleINumberplate(){
     return vehicleNumberPlate;
@@ -36,7 +36,7 @@ public void returnCar(){
     isAvalible = true;
 }
 public String getvehicletype(){
-    return vehicletype;
+    return vehicleType;
     
 }
 }
