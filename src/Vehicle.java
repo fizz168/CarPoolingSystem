@@ -3,7 +3,7 @@ class Vehicle{
     private String brand;
     private String model;
     private double pricePerDay;
-    private Boolean isAvalible;
+    private boolean isAvalible;
     private String vehicletype;
     
 public Vehicle (String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicletype){
