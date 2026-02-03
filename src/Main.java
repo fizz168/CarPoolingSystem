@@ -5,26 +5,20 @@ class Main {
 
         Vehicle v = new Vehicle("M12", "Toyota", "Hilux", 50.0, "Car");
         g.addVehicle(v);
-        Customer c = new Customer("C001", "Nhean Omra", "028733402", "male");
+        Customer c = new Customer("C001", "Nhean Omra", "098733402", "male");
         Staff s = new Staff("Lim Vinchay", "S99", 10101, "098765432");
         Rental r = new Rental(v, c, 3, 5001);
-
-        if (v.isAvalible()) {
-            v.rent();
-            // Rental r = new Rental(v, c, 3, 5001);
-
             System.out.println("--- Rental Receipt ---");
             System.out.println("Customer: " + c.name);
             System.out.println("Phone number :" + c.phoneNumber);
             System.out.println("Vehicle: " + v.vehicleNumberPlate);
-            System.out.println("Total Cost: $" + v.calulatePrice(r.days));
             System.out.println("Total Days :" + r.days);
             System.out.println("Status: Vehicle is now rented.");
             System.out.println("Staff info :" + s.nameStaff);
+            System.out.println(v.pricePerDay);
+            
 
-        } else {
-            System.out.println("Sorry, this vehicle is not available.");
-        }
+     
     System.out.println("-----------------------------");
         double originalPrice = v.pricePerDay;
         double copyPrice = originalPrice;

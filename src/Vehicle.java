@@ -7,7 +7,7 @@ class Vehicle {
     boolean isAvalible;
     String vehicleType;
 
-    Vehicle(String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicleType) {
+ public Vehicle(String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicleType) {
         this.vehicleNumberPlate = vehicleNumberPlate;
         this.brand = brand;
         this.model = model;
@@ -16,19 +16,19 @@ class Vehicle {
         this.vehicleType = vehicleType;
     }
 
-    double calulatePrice(int rentalDay) {
-        return pricePerDay * rentalDay;
-    }
+    // double calulatePrice(int rentalDay) {
+    //     return pricePerDay * rentalDay;
+    // }
 
-    boolean isAvalible() {
-        return isAvalible;
-    }
+    // boolean isAvalible() {
+    //     return isAvalible;
+    // }
 
-    void rent() {
-        isAvalible = false;
-    }
+    // void rent() {
+    //     isAvalible = false;
+    // }
 
-    void returnCar() {
-        isAvalible = true;
-    }
+    // void returnCar() {
+    //     isAvalible = true;
+    // }
 }

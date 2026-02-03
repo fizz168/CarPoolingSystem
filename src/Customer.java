@@ -1,4 +1,4 @@
-class Customer {
+public class Customer {
 
     String customerPersonalId;
     String name;
@@ -6,7 +6,7 @@ class Customer {
     String gender;
     boolean isMember;
 
-    Customer(String customerPersonalId, String name, String phoneNumber, String gender) {
+public Customer(String customerPersonalId, String name, String phoneNumber, String gender) {
         this.customerPersonalId = customerPersonalId;
         this.name = name;
         this.phoneNumber = phoneNumber;
