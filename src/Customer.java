@@ -10,7 +10,7 @@ class Customer {
         this.customerPersonalId = customerPersonalId;
         this.name = name;
         this.phoneNumber = phoneNumber;
-        this.gender = gender;   // necessary fix
+        this.gender = gender;   
         this.isMember = false;
     }
 }
