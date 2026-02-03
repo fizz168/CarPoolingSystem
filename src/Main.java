@@ -16,9 +16,6 @@ class Main {
             System.out.println("Status: Vehicle is now rented.");
             System.out.println("Staff info :" + s.nameStaff);
             System.out.println(v.pricePerDay);
-            
-
-     
     System.out.println("-----------------------------");
         double originalPrice = v.pricePerDay;
         double copyPrice = originalPrice;
@@ -36,6 +33,11 @@ class Main {
         v.pricePerDay = 6.9;
         System.out.println("Vehicle prize Change to : " + v.pricePerDay);
         System.out.println("Vehicle original prize :" + r.priceAtBooking);
+
+        Vehicle found = g.findVehicle("Non Existent");
+        if(found == null){
+            System.out.println("Vehicle is not found");
+        }
 
 
 
