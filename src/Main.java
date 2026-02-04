@@ -1,5 +1,5 @@
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Garage g = new Garage("CADT Auto", 10);
 
@@ -37,14 +37,6 @@ class Main {
         Vehicle found = g.findVehicle("Non Existent");
         if(found == null){
             System.out.println("Vehicle is not found");
-        }
-
-
-
-        
-
-
-
-        
+        } 
     }
 }
