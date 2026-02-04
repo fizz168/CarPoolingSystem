@@ -1,6 +1,6 @@
 
-public class Main {
-    public static void main(String[] args) {
+class Main {
+    static void main(String[] args) {
         Garage g = new Garage("CADT Auto", 10);
 
         Vehicle v = new Vehicle("M12", "Pagani", "Huayra Roadster BC", 500.00, "Car");
