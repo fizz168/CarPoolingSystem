@@ -1,4 +1,4 @@
-class Vehicle {
+public class Vehicle {
 
     String vehicleNumberPlate;
     String brand;
