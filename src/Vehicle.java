@@ -1,4 +1,4 @@
-public class Vehicle {
+ class Vehicle {
 
     String vehicleNumberPlate;
     String brand;
@@ -7,7 +7,7 @@ public class Vehicle {
     boolean isAvalible;
     String vehicleType;
 
- public Vehicle(String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicleType) {
+  Vehicle(String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicleType) {
         this.vehicleNumberPlate = vehicleNumberPlate;
         this.brand = brand;
         this.model = model;

@@ -1,4 +1,4 @@
-public class Rental {
+ class Rental {
 
     Vehicle vehicle;
     Customer customer;
@@ -6,7 +6,7 @@ public class Rental {
     int recordId;
     double priceAtBooking;
 
-public   Rental(Vehicle vehicle, Customer customer, int days, int recordId) {
+  Rental(Vehicle vehicle, Customer customer, int days, int recordId) {
         this.vehicle = vehicle;
         this.customer = customer;
         this.days = days;
