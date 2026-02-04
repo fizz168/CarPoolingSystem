@@ -16,6 +16,8 @@ public class Main {
             System.out.println("Status: Vehicle is now rented.");
             System.out.println("Staff info :" + s.nameStaff);
             System.out.println(v.pricePerDay);
+            System.out.println("brand: " + v.brand);
+            System.out.println("model: " + v.model);
     System.out.println("-----------------------------");
         double originalPrice = v.pricePerDay;
         double copyPrice = originalPrice;
