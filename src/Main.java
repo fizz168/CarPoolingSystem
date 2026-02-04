@@ -22,19 +22,19 @@ public class Main {
         double originalPrice = v.pricePerDay;
         double copyPrice = originalPrice;
         copyPrice = 6.7;
-        System.out.println("Original price :" + originalPrice);
-        System.out.println("Prize copy :" + copyPrice);
+        System.out.println("Original price: " + originalPrice);
+        System.out.println("Prize copy: " + copyPrice);
 
         Vehicle vR = v;
         vR.brand = "Mercedes";
-        System.out.println("Original Brand :" + v.brand);
-        System.out.println("Copy Brand :" + vR.brand);
+        System.out.println("Original Brand: " + v.brand);
+        System.out.println("Copy Brand: " + vR.brand);
 
         System.out.println("Price in system: " + g.inventory[0].pricePerDay);
 
         v.pricePerDay = 6.9;
-        System.out.println("Vehicle prize Change to : " + v.pricePerDay);
-        System.out.println("Vehicle original prize :" + r.priceAtBooking);
+        System.out.println("Vehicle prize Change to: " + v.pricePerDay);
+        System.out.println("Vehicle original prize: " + r.priceAtBooking);
 
         Vehicle found = g.findVehicle("Non Existent");
         if(found == null){
