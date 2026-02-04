@@ -10,12 +10,12 @@ public class Main {
         Rental r = new Rental(v, c, 3, 5001);
             System.out.println("--- Rental Receipt ---");
             System.out.println("Customer: " + c.name);
-            System.out.println("Phone number :" + c.phoneNumber);
+            System.out.println("Phone number : " + c.phoneNumber);
             System.out.println("Vehicle: " + v.vehicleNumberPlate);
-            System.out.println("Total Days :" + r.days);
+            System.out.println("Total Days : " + r.days);
             System.out.println("Status: Vehicle is now rented.");
-            System.out.println("Staff info :" + s.nameStaff);
-            System.out.println("Price per day:" + v.pricePerDay);
+            System.out.println("Staff info : " + s.nameStaff);
+            System.out.println("Price per day :" + v.pricePerDay);
             System.out.println("brand: " + v.brand);
             System.out.println("model: " + v.model);
     System.out.println("-----------------------------");
