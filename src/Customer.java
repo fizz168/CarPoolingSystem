@@ -1,16 +1,31 @@
- class Customer {
+ public class Customer {
+    private String customerPersonalId;
+    private String customerName;
+    private String customerPhoneNumber;
+    private String gender;
+    private boolean isMember;
 
-    String customerPersonalId;
-    String name;
-    String phoneNumber;
-    String gender;
-    boolean isMember;
-
- Customer(String customerPersonalId, String name, String phoneNumber, String gender) {
+ public Customer(String customerPersonalId, String customerName, String customerPhonenumber, String gender) {
         this.customerPersonalId = customerPersonalId;
-        this.name = name;
-        this.phoneNumber = phoneNumber;
+        this.customerName = customerName;
+        this.customerPhoneNumber = customerPhonenumber;
         this.gender = gender;   
         this.isMember = false;
     }
+public String getCustomerPersonalId(){
+    return customerPersonalId;
+}
+public String getCustomerName(){
+    return customerName;
+}
+public String getCustomerPhoneNumber(){
+    return customerPhoneNumber;
+}
+public String getGender(){
+    return gender;
+}
+public boolean isMember(){
+    return isMember;
+}
+
 }
