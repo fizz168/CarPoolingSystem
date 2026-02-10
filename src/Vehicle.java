@@ -25,19 +25,33 @@ public Vehicle(String vehicleNumberPlate, String brand, String model){
     this.isAvalible = false;
     this.vehicleType = "general";
 }
-    // double calulatePrice(int rentalDay) {
-    //     return pricePerDay * rentalDay;
-    // }
-
-    // boolean isAvalible() {
-    //     return isAvalible;
-    // }
-
-    // void rent() {
-    //     isAvalible = false;
-    // }
-
-    // void returnCar() {
-    //     isAvalible = true;
-    // }
+// setter
+public static int getTotalVehicle(){
+    return totalVehicle;
+}
+public String getBrand(){
+    return brand;
+}
+public void setPricePerDay(double price){
+    if(price > 0){
+        this.pricePerDay = price;
+    }else{
+        System.out.println("Error");
+    }
+}  
+public double calulatePrice(int rentalDay) {
+      return pricePerDay * rentalDay;
+}
+public boolean isAvalible() {
+        return isAvalible;
+}
+public double getPricePerDay(){
+    return pricePerDay;
+}
+public void rent() {
+    isAvalible = false;
+}
+public void returnCar() {
+    isAvalible = true;
+    }
 }

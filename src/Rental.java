@@ -11,6 +11,6 @@
         this.customer = customer;
         this.days = days;
         this.recordId = recordId;
-        this.priceAtBooking = vehicle.pricePerDay;
+        this.priceAtBooking = vehicle.getPricePerDay();
     }
 }
