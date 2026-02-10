@@ -1,17 +1,22 @@
-class Garage {
-    String systemName;
-    Vehicle[] inventory;
-    int vehicleCount;
-Garage(String systemName, int capacity){
-    this.systemName = systemName;
+public class Garage {
+    private String garageName;
+    private Vehicle[] inventory;
+    private int vehicleCount;
+public Garage(String garageName, int capacity){
+    this.garageName = garageName;
     this.inventory = new Vehicle[capacity];
     this.vehicleCount = 0;
 }
-void addVehicle(Vehicle v){
+public String getGarageName(){
+    return garageName;
+}
+public void addVehicle(Vehicle v){
+    if(vehicleCount < inventory.length){
     inventory[vehicleCount] = v;
     vehicleCount++;
 }
-Vehicle findVehicle(String plateFound){
+}
+public Vehicle findVehicle(String plateFound){
     for(int i = 0; i < vehicleCount; i++){
         if(inventory[i].getVehicleNumberPlate().equals(plateFound)){
             return inventory[i] ;
