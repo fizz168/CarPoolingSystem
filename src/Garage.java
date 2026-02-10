@@ -25,4 +25,11 @@ public Vehicle findVehicle(String plateFound){
     return null;
 
 }
+public Vehicle getVehicleAt(int index){
+    if(index >= 0 && index < vehicleCount){
+        return inventory[index];
+    }
+    return null;
+
+}
 }
