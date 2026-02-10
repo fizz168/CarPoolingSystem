@@ -25,7 +25,9 @@ public Vehicle(String vehicleNumberPlate, String brand, String model){
     this.isAvalible = false;
     this.vehicleType = "general";
 }
-// setter
+public String getVehicleNumberPlate(){
+    return vehicleNumberPlate;
+}
 public static int getTotalVehicle(){
     return totalVehicle;
 }
@@ -53,5 +55,12 @@ public void rent() {
 }
 public void returnCar() {
     isAvalible = true;
-    }
+}
+public String getModel(){
+    return model;
+}
+public String getVehicleType(){
+    return vehicleType;
+}
+
 }

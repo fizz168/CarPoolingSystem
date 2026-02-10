@@ -13,7 +13,7 @@ void addVehicle(Vehicle v){
 }
 Vehicle findVehicle(String plateFound){
     for(int i = 0; i < vehicleCount; i++){
-        if(inventory[i].vehicleNumberPlate.equals(plateFound)){
+        if(inventory[i].getVehicleNumberPlate().equals(plateFound)){
             return inventory[i] ;
         }
     }
