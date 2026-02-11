@@ -2,11 +2,14 @@ public class Garage {
     private String garageName;
     private Vehicle[] inventory;
     private int vehicleCount;
+    private Staff[] staffs;
+    private int staffCount;
     private static double taxRate = 0.10;
 public Garage(String garageName, int capacity){
     this.garageName = garageName;
     this.inventory = new Vehicle[capacity];
     this.vehicleCount = 0;
+    this.staffs = new Staff[capacity];
     taxRate ++;
 }
 public static double getTaxRate(){
@@ -14,6 +17,12 @@ public static double getTaxRate(){
 }
 public String getGarageName(){
     return garageName;
+}
+public void addStaff(Staff s){
+    if(staffCount < staffs.length){
+        staffs[staffCount] = s;
+        staffCount ++;
+    }
 }
 public void addVehicle(Vehicle v){
     if(vehicleCount < inventory.length){
