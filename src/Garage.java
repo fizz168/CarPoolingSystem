@@ -10,7 +10,6 @@ public Garage(String garageName, int capacity){
     this.inventory = new Vehicle[capacity];
     this.vehicleCount = 0;
     this.staffs = new Staff[capacity];
-    taxRate ++;
 }
 public static double getTaxRate(){
     return taxRate;
