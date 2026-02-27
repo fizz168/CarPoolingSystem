@@ -1,3 +1,4 @@
+
  public class Vehicle {
 
     private String vehicleNumberPlate;
@@ -9,13 +10,11 @@
     private static int totalVehicle = 0;
 
  public Vehicle(String vehicleNumberPlate, String brand, String model, double pricePerDay, String vehicleType) {
-        this.vehicleNumberPlate = vehicleNumberPlate;
-        this.brand = brand;
-        this.model = model;
-        this.pricePerDay = pricePerDay;
-        this.isAvalible = true;
-        this.vehicleType = vehicleType;
-        totalVehicle++;
+       setVehicleNumberPlate(vehicleNumberPlate);
+       setBrand(brand);
+       SetModel(model);
+       setPricePerDay(pricePerDay);
+       setVehicleType(vehicleType);
     }
 public Vehicle(String vehicleNumberPlate, String brand, String model){
     this.vehicleNumberPlate = vehicleNumberPlate;
@@ -33,6 +32,22 @@ public static int getTotalVehicle(){
 }
 public String getBrand(){
     return brand;
+}
+public void setVehicleNumberPlate(String vehicleNumberPlate){
+    if(isBlank(vehicleNumberPlate)) this.vehicleNumberPlate = "UNKNOW";
+    else this.vehicleNumberPlate = vehicleNumberPlate.trim();
+}
+public void setBrand(String Brand){
+    if(isBlank(Brand)) this.brand = "UNKNOW";
+    else this.brand = brand.trim();
+}
+public void SetModel(String model){
+    if(isBlank(model)) this.model = "UNKNOW";
+    else this.model = model.trim();
+}
+public void setVehicleType(String vehicleType){
+    if(isBlank(vehicleType)) this.vehicleType = "UNKNOW";
+    else this.vehicleType = vehicleType.trim();
 }
 public void setPricePerDay(double price){
     if(price > 0){
@@ -61,6 +76,9 @@ public String getModel(){
 }
 public String getVehicleType(){
     return vehicleType;
+}
+private boolean isBlank(String s){
+    return s == null || s.trim().isEmpty();
 }
 
 }
