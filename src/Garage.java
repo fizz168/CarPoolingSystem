@@ -341,7 +341,21 @@ public class Garage {
         }
         return null;
     }
+// =========================
+// VEHICLE HELPERS
+// =========================
+public void returnVehicle(String vehicleNumberPlate) {
+    if (!requireStaffLogin()) return;
 
+    Vehicle v = findVehicleByNumberPlate(vehicleNumberPlate);
+    if (v == null) {
+        setLastMessage("Vehicle not found.");
+        return;
+    }
+
+    v.returnCar(); // mark the vehicle as available
+    setLastMessage("Vehicle " + v.getVehicleNumberPlate() + " is now available.");
+}
     // =========================
     // ORDER MANAGEMENT
     // =========================
@@ -400,4 +414,12 @@ public class Garage {
                     + " | Created by: " + (o.getCreatedBy() != null ? o.getCreatedBy().getFullName() : "Unknown"));
         }
     }
+
+    @Override
+    public String toString() {
+        return "Garage [garageName=" + garageName + ", garageAddress=" + garageAddress + ", vehicles=" + vehicles
+                + ", staffs=" + staffs + ", orders=" + orders + ", customers=" + customers + ", loggedInStaff="
+                + loggedInStaff + ", lastMessage=" + lastMessage + "]";
+    }
+    
 }
